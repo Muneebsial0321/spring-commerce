@@ -1,0 +1,156 @@
+databaseChangeLog:
+- changeSet:
+    id: 1756306494834-1
+     author: PMYLS (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: user_entity_pkey
+            name: id
+            type: BIGINT
+        - column:
+            name: created_at
+            type: TIMESTAMP WITH TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: email
+            type: VARCHAR(255)
+        - column:
+            name: name
+            type: VARCHAR(255)
+        - column:
+            name: password
+            type: VARCHAR(255)
+        - column:
+            name: provider
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: role
+            type: VARCHAR(255)
+        - column:
+            name: updated_at
+            type: TIMESTAMP WITH TIME ZONE
+        tableName: user_entity
+- changeSet:
+    id: 1756306494834-2
+    author: PMYLS (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: email
+        constraintName: uk4xad1enskw4j1t2866f7sodrx
+        tableName: user_entity
+- changeSet:
+    id: 1756306494834-3
+    author: PMYLS (generated)
+    changes:
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 50
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: product_seq
+        startValue: 1
+- changeSet:
+    id: 1756306494834-4
+    author: PMYLS (generated)
+    changes:
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 50
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: user_entity_seq
+        startValue: 1
+- changeSet:
+    id: 1756306494834-5
+    author: PMYLS (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_pkey
+            name: id
+            type: BIGINT
+        - column:
+            name: created_at
+            type: TIMESTAMP WITH TIME ZONE
+        - column:
+            name: updated_at
+            type: TIMESTAMP WITH TIME ZONE
+        - column:
+            name: description
+            type: VARCHAR(255)
+        - column:
+            name: name
+            type: VARCHAR(255)
+        - column:
+            name: original_price
+            type: INTEGER
+        - column:
+            name: sale_price
+            type: INTEGER
+        tableName: product
+
+databaseChangeLog:
+- changeSet:
+    id: 1756306790159-1
+    author: PMYLS (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: uk4xad1enskw4j1t2866f7sodrx
+        tableName: user_entity
+- changeSet:
+    id: 1756306790159-2
+    author: PMYLS (generated)
+    changes:
+    - dropTable:
+        tableName: user_entity
+- changeSet:
+    id: 1756306790159-3
+    author: PMYLS (generated)
+    changes:
+    - dropColumn:
+        columnName: created_at
+        tableName: product
+- changeSet:
+    id: 1756306790159-4
+    author: PMYLS (generated)
+    changes:
+    - dropColumn:
+        columnName: original_price
+        tableName: product
+- changeSet:
+    id: 1756306790159-5
+    author: PMYLS (generated)
+    changes:
+    - dropColumn:
+        columnName: sale_price
+        tableName: product
+- changeSet:
+    id: 1756306790159-6
+    author: PMYLS (generated)
+    changes:
+    - dropColumn:
+        columnName: updated_at
+        tableName: product
+- changeSet:
+    id: 1756306790159-7
+    author: PMYLS (generated)
+    changes:
+    - dropSequence:
+        sequenceName: user_entity_seq
+
