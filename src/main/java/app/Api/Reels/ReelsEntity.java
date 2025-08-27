@@ -1,17 +1,16 @@
-package app.{{properCase name}};
+package app.Api.Reels;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDateTime;
 import lombok.experimental.SuperBuilder;
 import app.Base.JpaBaseEntity;
 
 @Entity
-@Table(name = "{{snakeCase name}}")
+@Table(name = "reels")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class {{properCase name}}Entity extends JpaBaseEntity {
+public class ReelsEntity extends JpaBaseEntity {
 
 }

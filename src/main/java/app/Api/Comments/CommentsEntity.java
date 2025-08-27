@@ -1,17 +1,16 @@
-package app.{{properCase name}};
+package app.Api.Comments;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDateTime;
 import lombok.experimental.SuperBuilder;
 import app.Base.JpaBaseEntity;
 
 @Entity
-@Table(name = "{{snakeCase name}}")
+@Table(name = "comments")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class {{properCase name}}Entity extends JpaBaseEntity {
+public class CommentsEntity extends JpaBaseEntity {
 
 }
