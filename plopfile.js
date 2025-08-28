@@ -1,6 +1,6 @@
 
 // const BASE_DIR = `src/main/java/com/example`
-const BASE_DIR = `./src/main/java/app`
+const BASE_DIR = `./src/main/java/app/Api`
 module.exports = function (plop) {
   plop.setGenerator('module', {
     description: 'Generate a Java module with Controller, Service, Repository, and Entity',

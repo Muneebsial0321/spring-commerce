@@ -1,15 +1,15 @@
-package app.Api.Product;
+package app.Api.Category;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
-public class ProductService {
+public class CategoryService {
 
     @Autowired
-    private ProductRepository repository;
+    private CategoryRepository repository;
 
-    public Object create(ProductEntity entity) {
+    public Object create(CategoryEntity entity) {
         return repository.save(entity);
     }
 
@@ -21,7 +21,7 @@ public class ProductService {
         return repository.findById(id).orElse(null);
     }
 
-    public Object update(Long id, ProductEntity newEntity) {
+    public Object update(Long id, CategoryEntity newEntity) {
         return repository.findById(id).map(existing -> {
             newEntity.setId(id);
             return repository.save(newEntity);

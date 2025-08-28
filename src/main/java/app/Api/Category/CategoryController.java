@@ -1,19 +1,17 @@
-package app.Api.Product;
+package app.Api.Category;
 
-import app.Api.Product.models.ProductEntity;
-import app.Api.Product.services.ProductService;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
-@RequestMapping("/product")
-public class ProductController {
+@RequestMapping("/category")
+public class CategoryController {
 
     @Autowired
-    private ProductService service;
+    private CategoryService service;
 
     @PostMapping
-    public Object create(@RequestBody ProductEntity entity) {
+    public Object create(@RequestBody CategoryEntity entity) {
         return service.create(entity);
     }
 
@@ -28,7 +26,7 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public Object update(@PathVariable Long id, @RequestBody ProductEntity entity) {
+    public Object update(@PathVariable Long id, @RequestBody CategoryEntity entity) {
         return service.update(id, entity);
     }
 
