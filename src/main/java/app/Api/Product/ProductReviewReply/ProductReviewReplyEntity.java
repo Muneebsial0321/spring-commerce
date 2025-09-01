@@ -1,6 +1,6 @@
-package app.Api.Product.models;
+package app.Api.Product.ProductReviewReply;
 
-import app.Api.Auth.UserEntity;
+import app.Api.Product.ProductReview.ProductReviewEntity;
 import app.Base.JpaBaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -11,13 +11,13 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "product_review")
+@Table(name = "product_review_reply")
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
 @Getter
 @Setter
-public class ProductImpressionEntity extends JpaBaseEntity {
-    private UserEntity user;
-    private ProductEntity product;
+public class ProductReviewReplyEntity extends JpaBaseEntity {
+    private ProductReviewEntity review;
+    private String text;
 }

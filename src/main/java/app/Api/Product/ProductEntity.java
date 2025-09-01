@@ -1,4 +1,4 @@
-package app.Api.Product.models;
+package app.Api.Product;
 
 import app.Api.Brand.BrandEntity;
 import app.Api.Category.CategoryEntity;
@@ -7,6 +7,8 @@ import app.Base.JpaBaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -31,4 +33,6 @@ public class ProductEntity extends JpaBaseEntity {
     private BrandEntity brand;
     private CategoryEntity category;
     private ShopEntity shop;
+
+
 }

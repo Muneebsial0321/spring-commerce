@@ -1,6 +1,5 @@
-package app.Api.Product.repositories;
+package app.Api.Product;
 
-import app.Api.Product.models.ProductEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<ProductEntity, Long> {

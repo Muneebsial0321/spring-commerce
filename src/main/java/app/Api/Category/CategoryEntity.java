@@ -1,6 +1,6 @@
 package app.Api.Category;
 
-import app.Api.Product.models.ProductEntity;
+import app.Api.Product.ProductEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;

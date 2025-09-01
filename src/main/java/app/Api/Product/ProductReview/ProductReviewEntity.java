@@ -1,6 +1,7 @@
-package app.Api.Product.models;
+package app.Api.Product.ProductReview;
 
 import app.Api.Auth.UserEntity;
+import app.Api.Product.ProductEntity;
 import app.Base.JpaBaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

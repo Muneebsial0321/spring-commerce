@@ -1,6 +1,5 @@
-package app.Api.Product.repositories;
+package app.Api.Product.ProductImpression;
 
-import app.Api.Product.models.ProductImpressionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

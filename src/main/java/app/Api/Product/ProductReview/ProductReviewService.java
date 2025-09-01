@@ -1,4 +1,4 @@
-package app.Api.Product.services;
+package app.Api.Product.ProductReview;
 
 import org.springframework.stereotype.Service;
 

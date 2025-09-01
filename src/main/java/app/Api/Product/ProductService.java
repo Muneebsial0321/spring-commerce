@@ -1,9 +1,7 @@
-package app.Api.Product.services;
+package app.Api.Product;
 
-import app.Api.Product.models.ProductEntity;
-import app.Api.Product.repositories.ProductRepository;
-import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class ProductService {

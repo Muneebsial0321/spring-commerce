@@ -1,4 +1,4 @@
-package app.Api.Product.services;
+package app.Api.Product.ProductView;
 
 import org.springframework.stereotype.Service;
 
